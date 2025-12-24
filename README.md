@@ -15,8 +15,8 @@ Terraform으로 구성된 AWS 인프라 - 이미지 가공 및 회원가입 알�
 - Public Subnet: 192.168.10.0/25
 
 ### Storage
-- Original Bucket: ruokat-original-651109015678
-- Processed Bucket: ruokat-processed-651109015678
+- Original Bucket: ruokat-original-12345678
+- Processed Bucket: ruokat-processed-12345678
 - Lifecycle: optimized/ (1일 후 IA, 30일 후 Glacier)
 
 ### Messaging
@@ -70,13 +70,13 @@ terraform destroy
 
 ### 이미지 가공 테스트
 ```bash
-aws s3 cp test-image.jpg s3://ruokat-original-651109015678/
+aws s3 cp test-image.jpg s3://ruokat-original-12345678/
 ```
 
 처리된 이미지 확인:
-- s3://ruokat-processed-651109015678/backups/
-- s3://ruokat-processed-651109015678/thumbnails/
-- s3://ruokat-processed-651109015678/optimized/
+- s3://ruokat-processed-12345678/backups/
+- s3://ruokat-processed-12345678/thumbnails/
+- s3://ruokat-processed-12345678/optimized/
 
 ### 회원가입 테스트
 Cognito User Pool에서 사용자 등록 후 이메일 확인
@@ -87,4 +87,5 @@ Cognito User Pool에서 사용자 등록 후 이메일 확인
 - Region: ap-northeast-2 (Seoul)
 - Lambda Layer는 외부 ARN 사용 (Klayers Pillow)
 - SNS 이메일 구독은 반드시 확인 필요
+
 
