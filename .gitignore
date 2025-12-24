@@ -1,0 +1,10 @@
+# Terraform 관련
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfvars
+.terraform.lock.hcl
+
+# OS 및 에디터 관련
+.DS_Store
+.vscode/
