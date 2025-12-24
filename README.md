@@ -83,7 +83,8 @@ Cognito User Pool에서 사용자 등록 후 이메일 확인
 
 ## 주의사항
 
-- AWS 계정 ID: 651109015678
+- AWS 계정 ID: 12345678
 - Region: ap-northeast-2 (Seoul)
 - Lambda Layer는 외부 ARN 사용 (Klayers Pillow)
 - SNS 이메일 구독은 반드시 확인 필요
+
